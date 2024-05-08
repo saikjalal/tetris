@@ -1,0 +1,66 @@
+<!--
+  Saik Jalal (saj325@lehigh.edu)
+  Sam Wiley (sew225@lehigh.edu)
+  CSE264, Spring 2024
+  Final Project
+-->
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="welcome-box">
+    <div class="title">Welcome to Tetris!</div>
+    <div class="instructions">
+      <p>Instructions:</p>
+      <ul>
+        <li>Use the arrow keys to move the blocks left or right.</li>
+        <li>Press the up arrow key to rotate the blocks.</li>
+        <li>Try to complete horizontal lines without any gaps.</li>
+        <li>As you clear lines, your score will increase.</li>
+        <li>The spped will gradually increase as points increase.</li>
+        <li>When the blocks reach the top, the game is over.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <canvas id="tetris" width="200" height="400"></canvas>
+  </div>
+
+  <div class="scoreboard-container">
+    <div id="scoreboard">Score: 0</div>
+
+    <button id="start_game">Start Game</button>
+  </div>
+
+  <div id="gameOverScreen" style="display: none;">
+    <h1>Game Over</h1>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
