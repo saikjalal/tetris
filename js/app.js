@@ -1,9 +1,3 @@
-/*
-Saik Jalal (saj325@lehigh.edu)
-Sam Wiley (sew225@lehigh.edu)
-CSE264, Spring 2024
-Final Project
-*/
 function init() {
   const canvas = document.getElementById("tetris");
   const context = canvas.getContext("2d");
